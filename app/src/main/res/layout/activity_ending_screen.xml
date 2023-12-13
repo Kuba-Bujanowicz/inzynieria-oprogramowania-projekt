@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/winnerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zwycięzca: "
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    <TextView
+            android:id="@+id/winnerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            android:layout_below="@id/winnerTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nowa Gra"
+            android:layout_below="@id/winnerNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyjdź"
+            android:layout_below="@id/newGameButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<!-- res/menu/unit_menu.xml -->
+<menu xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+      tools:ignore="MissingDefaultResource">
+    <item
+            android:id="@+id/menu_move"
+            android:title="Ruch" />
+    <item
+            android:id="@+id/menu_exit_unit"
+
+            android:title="Wyjdź" />
+</menu>
