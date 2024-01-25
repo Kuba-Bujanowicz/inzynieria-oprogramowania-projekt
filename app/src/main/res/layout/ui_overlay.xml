@@ -11,17 +11,63 @@
             android:layout_height="wrap_content"
             android:text="End Turn"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/treeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tree"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:id="@+id/saveGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/treeButton"/>
+
     <TextView
             android:id="@+id/turnsCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingRight="10dp"
             android:text="1"
-    android:layout_marginStart="10pt"/>
+            android:layout_marginStart="10pt"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+    />
+
+    <TextView
+            android:id="@+id/currentPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/playerTurn"/>
+    <TextView
+            android:id="@+id/playerTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tura gracza: "
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:id="@+id/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
 
 
-        <!-- Dodaj inne elementy interfejsu użytkownika według potrzeb -->
+
+    <!-- Dodaj inne elementy interfejsu użytkownika według potrzeb -->
 
 
 

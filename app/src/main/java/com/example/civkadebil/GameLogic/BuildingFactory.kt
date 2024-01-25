@@ -9,9 +9,9 @@ class BuildingFactory {
     companion object {
         fun createBuilding(type: BuildingType,  playerId: Int): BuildingModel {
             return when (type) {
-                BuildingType.RATUSZ -> BuildingModel(BuildingType.RATUSZ, 2, 400, playerId)
-                BuildingType.KOSZARY -> BuildingModel(BuildingType.KOSZARY, 3, 300, playerId)
-                BuildingType.TARG -> BuildingModel(BuildingType.TARG, 1, 100, playerId)
+                BuildingType.RATUSZ -> BuildingModel(BuildingType.RATUSZ, 2, 10, playerId, 0)
+                BuildingType.KOSZARY -> BuildingModel(BuildingType.KOSZARY, 3, 300, playerId, 40)
+                BuildingType.TARG -> BuildingModel(BuildingType.TARG, 1, 100, playerId, 30)
             }
         }
     }

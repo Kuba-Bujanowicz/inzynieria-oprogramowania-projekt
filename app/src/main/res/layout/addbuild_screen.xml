@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Button
+            android:id="@+id/closeUnitMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+            android:layout_width="630dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:background="@drawable/zwoj"
+            android:padding="10dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:text="Zbuduj koszary (3 tury) 40"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addKoszary"
+                android:textAlignment="textEnd"
+                android:backgroundTint="#ffffff"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_money"
+                android:paddingRight="180dp"
+
+        />
+        <Button
+                android:text="Zbuduj targ (3 tury) 30"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addTarg"
+                android:textAlignment="textEnd"
+                android:backgroundTint="#ffffff"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_money"
+                android:paddingRight="180dp"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+    <!-- Dodaj inne elementy interfejsu użytkownika według potrzeb -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

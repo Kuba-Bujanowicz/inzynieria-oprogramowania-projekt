@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Button
+            android:id="@+id/closeUnitMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+            android:layout_width="630dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:background="@drawable/zwoj"
+            android:padding="10dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/unitWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:backgroundTint="#424242"
+                    android:textColor="@color/black"
+                    android:text="Jednostka" />
+
+            <Button
+                    android:id="@+id/buildingWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:enabled="true"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Budynek" />
+
+        </LinearLayout>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:id="@+id/unitInfo"
+                  android:textSize="15sp"
+
+        />
+        <Button
+                android:text="Załóż miasto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/unitSettle"
+                android:textAlignment="center"
+                android:backgroundTint="#ffffff"
+                android:textColor="@color/black"
+
+        />
+        <Button
+                android:text="Ruch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/unitMove"
+                android:textAlignment="center"
+                android:backgroundTint="#ffffff"
+                android:textColor="@color/black"
+
+        />
+    </LinearLayout>
+
+
+
+
+    <!-- Dodaj inne elementy interfejsu użytkownika według potrzeb -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
